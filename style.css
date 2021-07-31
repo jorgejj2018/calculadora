@@ -1,0 +1,56 @@
+.container{
+    padding-top: 100px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "dis dis dis dis"
+    "AC C div times"
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three equal"
+    "zero zero dot equal"
+    ;
+}
+
+.teclas{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: gray;
+    color:whitesmoke;
+    border: 1 solid #223;
+    font-size: 20px;
+}
+
+.dark{
+    background-color: #333;
+}
+.tomato{
+    background-color: tomato;
+}
+.blue{
+    background-color: #68a6e0;
+}
+.dis{
+    grid-area: dis;
+    background-color:black;
+    text-align: 20px;
+}
+.zero{
+    grid-area: zero;
+}
+.equal{
+    grid-area: equal;
+}
+.total{
+    padding:5px 20px ;
+    color:cadetblue;
+}
